@@ -67,8 +67,7 @@ namespace ParallelLoop
 
             GetSomethingSmallSet(list);
 
-
-
+            GetRandomNumber();
 
 
             Console.ReadLine();
@@ -217,6 +216,35 @@ namespace ParallelLoop
                     }
                 });
             Console.WriteLine();
+        }
+
+        /// <summary>
+        ///  产生随机数
+        /// </summary>
+        static void GetRandomNumber()
+        {
+            Int32 numberOfSteps = 100;
+
+            Double[] result = new Double[numberOfSteps];
+
+            Parallel.ForEach(Partitioner.Create(0, numberOfSteps),
+                new ParallelOptions(),
+                () => { return new Random(MakeRandomSeed()); },
+                (range, loopState, random) =>
+                {
+                    for (int i = range.Item1; i < range.Item2; i++)
+                    {
+                        result[i] = random.NextDouble();
+                        Console.WriteLine(result[i]);
+                    }
+                    return random;
+                },
+                _ => { });
+        }
+
+        static Int32 MakeRandomSeed()
+        {
+            return DateTime.Now.Millisecond;
         }
     }
 }

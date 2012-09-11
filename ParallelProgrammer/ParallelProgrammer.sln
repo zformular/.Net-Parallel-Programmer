@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLoop", "ParallelLoop\ParallelLoop.csproj", "{32E09C16-7891-460E-922D-05AA8B9982D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLoop.Practice", "ParallelLoop.Practice\ParallelLoop.Practice.csproj", "{1751637A-2866-40CD-AD77-6CDC2A46C11E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{32E09C16-7891-460E-922D-05AA8B9982D8}.Debug|x86.Build.0 = Debug|x86
 		{32E09C16-7891-460E-922D-05AA8B9982D8}.Release|x86.ActiveCfg = Release|x86
 		{32E09C16-7891-460E-922D-05AA8B9982D8}.Release|x86.Build.0 = Release|x86
+		{1751637A-2866-40CD-AD77-6CDC2A46C11E}.Debug|x86.ActiveCfg = Debug|x86
+		{1751637A-2866-40CD-AD77-6CDC2A46C11E}.Debug|x86.Build.0 = Debug|x86
+		{1751637A-2866-40CD-AD77-6CDC2A46C11E}.Release|x86.ActiveCfg = Release|x86
+		{1751637A-2866-40CD-AD77-6CDC2A46C11E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
